@@ -31,14 +31,6 @@ var renderCloud = function (ctx, x, y, color) {
 // Функция для вычисления максимального времени из массива - через Math.max либо через цикл
 var getMaxElement = function (arr) {
   return Math.max.apply(Math, arr);
-  // var maxElement = arr[0];
-
-  // for (var i = 1; i < arr.length; i++) {
-  //   if (arr[i] > maxElement) {
-  //     maxElement = arr[i];
-  //   }
-  // }
-  // return maxElement;
 };
 
 window.renderStatistics = function (ctx, players, times) {
