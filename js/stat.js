@@ -31,14 +31,6 @@ var renderCloud = function (ctx, x, y, color) {
 // Функция для вычисления максимального времени из массива - через Math.max либо через цикл
 var getMaxElement = function (arr) {
   return Math.max.apply(Math, arr);
-  // var maxElement = arr[0];
-
-  // for (var i = 1; i < arr.length; i++) {
-  //   if (arr[i] > maxElement) {
-  //     maxElement = arr[i];
-  //   }
-  // }
-  // return maxElement;
 };
 
 window.renderStatistics = function (ctx, players, times) {
@@ -69,7 +61,7 @@ window.renderStatistics = function (ctx, players, times) {
     if (players[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
-      ctx.fillStyle = 'hsl(240, ' + Math.round(Math.random() * (100 - 10) + 10) + '%' + ', 50%)';
+      ctx.fillStyle = 'hsl(240, ' + Math.floor(10 + Math.random() * (100 + 1 - 10)) + '%' + ', 50%)';
     }
 
     // Вычисляем высоту каждого отдельного столбца гистограммы
