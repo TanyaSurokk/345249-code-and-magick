@@ -61,7 +61,7 @@ window.renderStatistics = function (ctx, players, times) {
     if (players[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
-      ctx.fillStyle = 'hsl(240, ' + Math.round(Math.random() * (100 - 10) + 10) + '%' + ', 50%)';
+      ctx.fillStyle = 'hsl(240, ' + Math.floor(10 + Math.random() * (100 + 1 - 10)) + '%' + ', 50%)';
     }
 
     // Вычисляем высоту каждого отдельного столбца гистограммы
